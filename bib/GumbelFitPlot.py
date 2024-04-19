@@ -17,8 +17,6 @@ pylab.mpl.rcParams['xtick.labelsize'] = u'small'
 pylab.mpl.rcParams['ytick.labelsize'] = u'small'
 
 
-
-
 def get_a(num):
     """
     获取超越概率计算参数a: A Plotting Rule for Extreme Probability Paper
@@ -56,6 +54,7 @@ if __name__ == '__main__':
 
     data = np.loadtxt('../data/Rainfall.txt')
     data.sort()
+
     xtest = np.array([30, 150])
     for i, a in enumerate([None, 0]):
         F, a = observation_prob(data, a)
